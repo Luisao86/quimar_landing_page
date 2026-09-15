@@ -35,8 +35,6 @@ Definir una arquitectura escalable para SEO local, comercial B2B y geográfico, 
 - `/envios/catamarca/`
 - `/envios/la-rioja/`
 
----
-
 ## 2) Mapa de intención + keywords + prioridad
 
 | URL | Intención principal | Keyword principal | Keywords secundarias | Prioridad | Riesgo canibalización |
