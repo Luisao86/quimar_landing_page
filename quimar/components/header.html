@@ -1,16 +1,38 @@
-<header class="nav">
-    <div class="wrap navin">
-        <a href="/" class="logo" aria-label="Ir al inicio Quimar">
-            <img src="/assets/img/logo_quimar/quimar_logo.webp" alt="Logo Quimar" class="logo-img" width="100" height="100">
-        </a>
-        <nav class="links" aria-label="Navegación principal">
-            <a href="/">Inicio</a>
-            <a href="/mayorista/">Mayorista</a>
-            <a href="/productos/">Productos</a>
-            <a href="/distribucion/">Distribución</a>
-            <a href="/envios-al-interior/">Envíos al interior</a>
-            <a href="/contacto/">Contacto</a>
-        </nav>
-        <a class="navbtn" href="/contacto/">Consultar por mayor</a>
+<header class="nav" data-component="header" data-open="false">
+  <div class="wrap navin">
+    <a href="/" class="logo" aria-label="Ir al inicio Quimar">
+      <img
+        src="/assets/img/logo_quimar/quimar_logo.webp"
+        alt="Quimar"
+        width="100"
+        height="100"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async">
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="primary-nav"
+      aria-label="Abrir menú"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="links" id="primary-nav" aria-label="Navegación principal">
+      <a href="/">Inicio</a>
+      <a href="/mayorista/">Mayorista</a>
+      <a href="/productos/">Productos</a>
+      <a href="/distribucion/">Distribución</a>
+      <a href="/envios-al-interior/">Envíos</a>
+      <a href="/contacto/">Contacto</a>
+    </nav>
+    <div>
+      <a class="navbtn" href="https://wa.me/5491133832425?text=Hola%20Quimar,%20estoy%20en%20la%20web%20y%20quiero%20consultar%20por%20mayor" target="_blank" rel="noopener noreferrer">
+        Consultar por mayor
+      </a>
     </div>
+  </div>
 </header>
