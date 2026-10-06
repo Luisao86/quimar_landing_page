@@ -293,3 +293,5 @@ Desarrollo técnico + QA (FASE 4)
 - [ ] Core Web Vitals optimizado
 - [ ] Revisión mobile-first
 - [ ] QA SEO técnico final
+
+
