@@ -85,21 +85,3 @@ document.addEventListener("DOMContentLoaded", async () => {
     ensureWhatsAppFloat();
   }
 });
-
-(async function () {
-  const placeholders = document.querySelectorAll('[data-include]');
-  if (!placeholders.length) return;
-
-  for (const el of placeholders) {
-    const part = el.getAttribute('data-include');
-    const url = `/partials/${part}.html`;
-
-    try {
-      const res = await fetch(url, { cache: 'no-cache' });
-      if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
-      el.innerHTML = await res.text();
-    } catch (err) {
-      console.error(`Include error (${url}):`, err);
-    }
-  }
-})();

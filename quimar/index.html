@@ -18,11 +18,12 @@
         <link
             rel="preload"
             as="image"
-            href="/assets/img/hero-1672.webp"
+            href="/assets/img/hero-1670.webp"
             type="image/webp"
-            imagesrcset="/assets/img/hero-640.webp 640w, /assets/img/hero-960.webp 960w, /assets/img/hero-1280.webp 1280w, /assets/img/hero-1672.webp 1672w"
+            imagesrcset="/assets/img/hero-640.webp 640w, /assets/img/hero-960.webp 960w, /assets/img/hero-1280.webp 1280w, /assets/img/hero-1670.webp 1670w"
             imagesizes="(max-width: 980px) 100vw, 56vw"
         >
+        <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
     </head>
     <body>
         <div data-include="header"></div>
@@ -30,12 +31,10 @@
             <section class="hero">
                 <div class="wrap heroin">
                     <div class="hero-copy">
-                        <div class="ey">Mayorista para comercios y revendedores</div>
-                        <h1>Mayorista de productos de limpieza y artículos para comercios en Bosques, Florencio Varela</h1>
-                        <p>Productos de limpieza, plásticos, perfumería, hogar y bazar para abastecer comercios y revendedores.</p>
+                        <h1>Mayorista de productos de limpieza en Bosques, Florencio Varela</h1>
+                        <p>Productos de limpieza, plásticos, perfumería, hogar, cortinas, alfombras y manteles para abastecer comercios y revendedores.</p>
                         <div class="actions">
                             <a class="btn" href="#categorias">Ver productos →</a>
-                            <!-- TODO: reemplazar por https://wa.me/NUMERO_CONFIRMADO cuando Quimar confirme número comercial -->
                             <a
                                 class="btn ghost btn-wa-outline"
                                 href="https://wa.me/5491133832425?text=Hola%20Quimar%2C%20quiero%20informaci%C3%B3n%20mayorista"
@@ -53,10 +52,11 @@
                         </ul>
                         <div class="quick" aria-label="Categorías rápidas">
                             <a href="/productos/limpieza/">Limpieza</a>
-                            <a href="/productos/plasticos/">Plásticos</a>
+                            <a href="/productos/plasticos-y-hogar/">Plásticos y Hogar</a>
                             <a href="/productos/perfumeria/">Perfumería</a>
-                            <a href="/productos/hogar/">Hogar</a>
-                            <a href="/productos/bazar/">Bazar</a>
+                            <a href="/productos/papel-e-higiene/">Papel e Higiene</a>
+                            <a href="/productos/cortinas-alfombras-manteles/">Cortinas, alfombras y manteles</a>
+                            <a href="/productos/mantenimiento-piscinas/">Mantenimiento de Piscinas</a>
                         </div>
                     </div>
                     <div class="visual hero-media" aria-label="Productos de limpieza, plásticos, perfumería y hogar">
@@ -73,11 +73,11 @@
                                 srcset="/assets/img/hero-960.webp 960w, /assets/img/hero-1280.webp 1280w"
                                 sizes="100vw"
                             >
-                            <source type="image/webp" srcset="/assets/img/hero-1280.webp 1280w, /assets/img/hero-1672.webp 1672w" sizes="(max-width: 980px) 100vw, 56vw">
+                            <source type="image/webp" srcset="/assets/img/hero-1280.webp 1280w, /assets/img/hero-1670.webp 1670w" sizes="(max-width: 980px) 100vw, 56vw">
                             <img
-                                src="/assets/img/hero-1672.webp"
+                                src="/assets/img/hero-1670.webp"
                                 alt="Productos mayoristas de limpieza, plásticos, perfumería y hogar"
-                                width="1672"
+                                width="1670"
                                 height="941"
                                 loading="eager"
                                 fetchpriority="high"
@@ -91,7 +91,6 @@
                 <div class="wrap">
                     <div class="categorias-head">
                         <div>
-                            <div class="k">01 / CATEGORÍAS</div>
                             <h2>
                                 Una sola parada.
                                 <br>
@@ -99,12 +98,11 @@
                             </h2>
                         </div>
                         <p class="intro">
-                            Organizamos el catálogo por familias para que encuentres rápido
-                lo que tu negocio necesita.
+                            Organizamos el catálogo por familias para que encuentres rápido lo que tu negocio necesita.
                         </p>
                     </div>
                     <div class="cats-grid">
-                        <a class="cat-card" href="/productos/limpieza/">
+                        <article class="cat-card">
                             <div class="cat-media">
                                 <img
                                     src="/assets/img/categorias/limpieza.webp"
@@ -118,10 +116,10 @@
                             <div class="cat-body">
                                 <h3>LIMPIEZA</h3>
                                 <p>Escobillones, mopas, esponjas, rejillas, guantes y más.</p>
-                                <span class="cat-cta">Ver productos →</span>
+                                <a class="btn cat-btn" href="/productos/limpieza/">Ver productos</a>
                             </div>
-                        </a>
-                        <a class="cat-card" href="/productos/plasticos/">
+                        </article>
+                        <article class="cat-card">
                             <div class="cat-media">
                                 <img
                                     src="/assets/img/categorias/plastico_hogar.webp"
@@ -135,10 +133,10 @@
                             <div class="cat-body">
                                 <h3>PLÁSTICOS Y HOGAR</h3>
                                 <p>Baldes, palas, cestos y más.</p>
-                                <span class="cat-cta">Ver productos →</span>
+                                <a class="btn cat-btn" href="/productos/plasticos-y-hogar/">Ver productos</a>
                             </div>
-                        </a>
-                        <a class="cat-card" href="/productos/perfumeria/">
+                        </article>
+                        <article class="cat-card">
                             <div class="cat-media">
                                 <img
                                     src="/assets/img/categorias/perfumeria.webp"
@@ -152,10 +150,10 @@
                             <div class="cat-body">
                                 <h3>PERFUMERÍA</h3>
                                 <p>Aromatizantes, fragancias y productos de cuidado personal.</p>
-                                <span class="cat-cta">Ver productos →</span>
+                                <a class="btn cat-btn" href="/productos/perfumeria/">Ver productos</a>
                             </div>
-                        </a>
-                        <a class="cat-card" href="/productos/papel-e-higiene/">
+                        </article>
+                        <article class="cat-card">
                             <div class="cat-media">
                                 <img
                                     src="/assets/img/categorias/papel_higiene.webp"
@@ -169,10 +167,10 @@
                             <div class="cat-body">
                                 <h3>PAPEL E HIGIENE</h3>
                                 <p>Papel higiénico, rollos de cocina, toallitas y más.</p>
-                                <span class="cat-cta">Ver productos →</span>
+                                <a class="btn cat-btn" href="/productos/papel-e-higiene/">Ver productos</a>
                             </div>
-                        </a>
-                        <a class="cat-card" href="/productos/bazar/">
+                        </article>
+                        <article class="cat-card">
                             <div class="cat-media">
                                 <img
                                     src="/assets/img/categorias/Cortinas-Alfombras-Manteles.webp"
@@ -186,10 +184,10 @@
                             <div class="cat-body">
                                 <h3>Cortinas, Alfombras y Manteles</h3>
                                 <p>Artículos de baño, cocina y hogar.</p>
-                                <span class="cat-cta">Ver productos →</span>
+                                <a class="btn cat-btn" href="/productos/cortinas-alfombras-manteles/">Ver productos</a>
                             </div>
-                        </a>
-                        <a class="cat-card" href="/productos/piscinas/">
+                        </article>
+                        <article class="cat-card">
                             <div class="cat-media">
                                 <span class="cat-badge">☀ TEMPORADA</span>
                                 <img
@@ -204,9 +202,9 @@
                             <div class="cat-body">
                                 <h3>MANTENIMIENTO DE PISCINAS</h3>
                                 <p>Cloro, alguicidas, clarificadores y accesorios.</p>
-                                <span class="cat-cta">Ver productos →</span>
+                                <a class="btn cat-btn" href="/productos/mantenimiento-piscinas/">Ver productos</a>
                             </div>
-                        </a>
+                        </article>
                     </div>
                 </div>
             </section>
@@ -223,7 +221,6 @@
                         >
                     </div>
                     <div>
-                        <div class="k">02 / Para comercios y revendedores</div>
                         <h2>Más que un catálogo, somos tu proveedor.</h2>
                         <p style="color:var(--muted);line-height:1.75;max-width:560px">Una propuesta pensada para quienes necesitan variedad, productos competitivos y una atención cercana para abastecer su negocio.</p>
                         <div class="stats">
@@ -251,7 +248,6 @@
                 <div class="wrap">
                     <div class="head">
                         <div>
-                            <div class="k">03 / Marcas</div>
                             <h2>Productos de confianza.</h2>
                         </div>
                         <p class="intro">Una selección de marcas presentes en el catálogo de Quimar.</p>
@@ -476,7 +472,6 @@
                 <div class="wrap">
                     <div class="head">
                         <div>
-                            <div class="k">04 / Productos</div>
                             <h2>
                                 Lo que más buscan
                                 <br>
@@ -517,7 +512,7 @@
                             <div class="pd">
                                 <b>Baldes</b>
                                 <span>Resistentes y funcionales</span>
-                                <a href="/productos/plasticos/">Ver más →</a>
+                                <a href="/productos/plasticos-y-hogar/">Ver más →</a>
                             </div>
                         </article>
                         <article class="prod">
@@ -560,7 +555,6 @@
             <section class="contact" id="contacto">
                 <div class="wrap contactin">
                     <div>
-                        <div class="k contact-k">05 / Contacto</div>
                         <h2>¿Buscás un producto?</h2>
                         <p>Consultanos y te ayudamos a encontrar lo que necesitás para abastecer tu comercio.</p>
                         <a
