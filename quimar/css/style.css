@@ -2628,3 +2628,36 @@ footer {
     grid-template-columns:1fr;
   }
 }
+
+.category-landing-rich .hero-grid.hero-grid-text-only{grid-template-columns:1fr}
+.category-landing-rich .product-table-wrap{overflow-x:auto}
+.category-landing-rich .product-presentation-table{width:100%;min-width:520px;border-collapse:collapse;background:#fff}
+.category-landing-rich .product-presentation-table th,
+.category-landing-rich .product-presentation-table td{padding:12px 14px;border:1px solid var(--line);text-align:left}
+.category-landing-rich .product-presentation-table th{color:var(--ink);background:#f5f7fb}
+.category-landing-rich .product-availability-list{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.category-landing-rich .product-availability-list li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.category-landing-rich .product-availability-list a,
+.rv-card a{color:var(--b);font-weight:700}
+.catalog-extra-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:0;padding:0;list-style:none}
+.catalog-extra-links a{display:block;padding:16px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);font-weight:700}
+.rv{padding:64px 0;background:#f7f8fc}
+.rv-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.7fr);gap:32px;align-items:center;margin-bottom:28px}
+.rv-top h2{margin:0 0 12px}
+.rv-top .intro{max-width:70ch;color:var(--muted)}
+.rv-summary{padding:20px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.rv-summary p{margin:0 0 16px;color:var(--muted)}
+.rv-list{width:100%}
+.rv-group{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:14px}
+.rv-card{padding:20px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.rv-card p{margin:12px 0;color:var(--ink);font-size:14px;line-height:1.65}
+.rv-who b{display:block;color:var(--ink);font-size:14px}
+.rv-who small{color:var(--muted);font-size:12px}
+.rv-cta{margin-top:20px;text-align:center}
+
+@media (max-width:860px){
+  .rv-top{grid-template-columns:1fr;gap:20px}
+}
+@media (max-width:640px){
+  .category-landing-rich .product-availability-list li{align-items:flex-start;flex-direction:column}
+}

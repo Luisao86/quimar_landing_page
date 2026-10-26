@@ -76,6 +76,7 @@ function initFooterMeta() {
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     await includeFragment('[data-include="header"]', "/components/header.html");
+    await includeFragment('[data-include="resenas"]', "/components/resenas.html");
     await includeFragment('[data-include="footer"]', "/components/footer.html");
     initHeaderMenu();
     initFooterMeta();
