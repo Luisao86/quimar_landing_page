@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://TODO-CONFIRMAR-DOMINIO.com/sitemap.xml
+Sitemap: https://www.quimar.com.ar/sitemap.xml

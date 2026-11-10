@@ -1,0 +1,48 @@
+# Quimar - configuración para Hostinger (Apache / LiteSpeed)
+
+Options -Indexes
+ErrorDocument 404 /404.html
+
+# HTTPS y dominio canónico con www
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} !^www\. [NC]
+    RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+    RewriteRule ^ https://www.%1%{REQUEST_URI} [L,R=301]
+
+    # URLs de la versión anterior del sitio -> páginas actuales
+    RewriteRule ^productos/(bazar|hogar|plasticos)(/.*)?$ /productos/plasticos-y-hogar/ [R=301,L]
+    RewriteRule ^productos/piscinas(/.*)?$ /productos/mantenimiento-piscinas/ [R=301,L]
+    RewriteRule ^productos/envases(/.*)?$ /productos/ [R=301,L]
+
+    # Archivos de trabajo: nunca públicos (por si se suben por error)
+    RewriteRule (^|/)(_docs|_tools|_assets-src|\.impeccable|\.git)(/|$) - [F,L]
+</IfModule>
+
+# Compresión
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript text/javascript application/json image/svg+xml application/xml text/xml
+</IfModule>
+
+# Caché: CSS y JS llevan ?v= en la URL, se pueden cachear un año.
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 hour"
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    ExpiresByType image/webp "access plus 30 days"
+    ExpiresByType image/png "access plus 30 days"
+    ExpiresByType image/jpeg "access plus 30 days"
+    ExpiresByType image/svg+xml "access plus 30 days"
+    ExpiresByType image/x-icon "access plus 30 days"
+    ExpiresByType image/vnd.microsoft.icon "access plus 30 days"
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>

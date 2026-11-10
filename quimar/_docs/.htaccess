@@ -1,0 +1,9 @@
+# Documentación interna: no publicar.
+# Bloqueo de respaldo por si la carpeta se sube por error.
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>

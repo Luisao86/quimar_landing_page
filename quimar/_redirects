@@ -1,0 +1,6 @@
+# Netlify: URLs de la versión anterior del sitio -> páginas actuales (301)
+/productos/bazar/*      /productos/plasticos-y-hogar/       301
+/productos/hogar/*      /productos/plasticos-y-hogar/       301
+/productos/plasticos/*  /productos/plasticos-y-hogar/       301
+/productos/piscinas/*   /productos/mantenimiento-piscinas/  301
+/productos/envases/*    /productos/                         301
